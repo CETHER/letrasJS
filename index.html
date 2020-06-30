@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main id="contenido" class="contenido">
+        <h1>Letras de Canciones</h1>
+        <div class="contenedor">
+            <div class="buscar" id="buscar">
+                <h2>Búsqueda</h2>
+                <p>Busca por artista y nombre:</p>
+                <p><span> * </span> Obligtorio</p>
+                <form action="#" id="formulario-buscar">
+                    <div class="input">
+                        <label for="artista">Artista: <span>*</span></label>
+                        <input type="text" id="artista" placeholder="Artista">
+                    </div>
+                    <div class="input">
+                        <label for="cancion">Canción: <span>*</span></label>
+                        <input type="text" id="cancion" placeholder="Nombre Canción">
+                    </div>
+                    <div class="input enviar">
+                        <input type="submit" value="Buscar">
+                    </div>
+                    <div id="mensajes"></div>
+                </form>
+            </div>
+            <div class="letra-resultado">
+                <h2>Resultado</h2>
+                <div id="resultado"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
